@@ -2,4 +2,140 @@
     align-items: right;
 }
 
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 
+$primary-color: #ff073a;
+$font-weight-strong: 600;
+
+html {
+  font-family: "Raleway", sans-serif;
+}
+
+#skills {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  div {
+    padding: 0.2rem;
+    transition: opacity 0.5s;
+  }
+
+  div[skill-type="language"] {
+    color: #e84a5f;
+  }
+
+  div[skill-type="framework"] {
+    color: #ff847c;
+  }
+
+  div[skill-type="tool"] {
+    color: #fecea8;
+  }
+
+  div[skill-weight="1"] {
+    font-size: 2rem;
+    line-height: 1rem;
+  }
+
+  div[skill-weight="2"] {
+    font-size: 3rem;
+    line-height: 2rem;
+  }
+
+  div[skill-weight="3"] {
+    font-size: 4rem;
+    line-height: 3rem;
+  }
+
+  div[skill-weight="4"] {
+    font-size: 5rem;
+    line-height: 4rem;
+  }
+
+  div[skill-weight="5"] {
+    font-size: 6rem;
+    line-height: 5rem;
+  }
+
+  .filter-button {
+    color: #000;
+    cursor: pointer;
+    float: left;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    margin: 2rem 0.5%;
+    overflow: hidden;
+    padding: 0.5%;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    width: 23%;
+    z-index: 1;
+
+    &:after {
+      content: "";
+      color: white;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $primary-color;
+      z-index: -2;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background-color: darken($primary-color, 15%);
+      transition: all 0.3s;
+      z-index: -1;
+    }
+    &:hover {
+      color: #fff;
+      &:before {
+        width: 100%;
+      }
+    }
+  }
+
+  @mixin filter-out {
+    height: 0;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    width: 0;
+  }
+
+  input[type="radio"]:checked + .filter-button {
+    color: white;
+    font-weight: $font-weight-strong;
+  }
+
+  input[id="language"]:checked ~ div[skill-type="framework"],
+  input[id="language"]:checked ~ div[skill-type="tool"] {
+    @include filter-out;
+  }
+
+  input[id="framework"]:checked ~ div[skill-type="language"],
+  input[id="framework"]:checked ~ div[skill-type="tool"] {
+    @include filter-out;
+  }
+
+  input[id="tool"]:checked ~ div[skill-type="language"],
+  input[id="tool"]:checked ~ div[skill-type="framework"] {
+    @include filter-out;
+  }
+}

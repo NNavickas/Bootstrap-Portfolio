@@ -1,54 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="chrome">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
     <title>Natalie Navickas</title>
 </head>
+
 <body>
     <!--nav bar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="YOOT PICTURE HERE AS LOGO"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <a class="btn btn-sm navbar-brand" img src="Images/y00t.png" role="button" data-toggle="modal"
+            data-target="#NFTModal"></a>
+        <!--modal for NFTs, linked to by clicking the yoot on the navbar-->
+        <!-- Modal -->
+        <div class="modal fade" id="NFTModal" tabindex="-1" role="dialog" aria-labelledby="NFTModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="NFTModalLabel">NFT Gallery</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">byeeeee</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Skills</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                About Me
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Work History</a>
-                <a class="dropdown-item" href="#">Contact Me</a>
-                <a class="dropdown-item" href="#">Sponsor Me</a>
-              </div>
-            </li>
-          </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Skills</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        About Me
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Work History</a>
+                        <a class="dropdown-item" href="#">Contact Me</a>
+                        <a class="dropdown-item" href="#">Sponsor Me</a>
+                    </div>
+                </li>
+            </ul>
         </div>
-      </nav>
+    </nav>
+
     <!--jumbotron-->
-      <div class="jumbotron ">
+    <div class="jumbotron ">
         <h1 class="display-4">Natalie Navickas</h1>
         <img src="./Images/Nat.jpg" 50px alt="Woman with brown hair, blue eyes and a green blouse">
-        <p class="lead">Manufacturing and Supply Chain professional upskilling in tech with EdX x Trilogy Skills For Life bootcamp.</p>
+        <p class="lead">Manufacturing and Supply Chain professional upskilling in tech with EdX x Trilogy Skills For
+            Life bootcamp.</p>
         <hr class="my-4">
         <p>I'm running the London Marathon 2023 for Portsmouth Down Syndrome Association (DSA).
-        If you'd like to sponsor me, click the button below!
+            If you'd like to sponsor me, click the button below!
         </p>
-        <a class="btn btn-primary btn-lg" href="https://2023tcslondonmarathon.enthuse.com/pf/natalie-ellis-poppy-amelia" role="button">Sponsor Me?</a>
-      </div>
+        <a class="btn btn-primary btn-lg" href="https://2023tcslondonmarathon.enthuse.com/pf/natalie-ellis-poppy-amelia"
+            role="button">Sponsor Me?</a>
+    </div>
+
+    <!--PORTFOLIO-->
+
+    <!--to include 4 cards in the same style as the other portfolio-->
+    <section class="portfolio text-center bg-light">
+        <div class="container">
+            <h2 class="mb-5">Take a look at some of my work</h2>
+            <div class="row">
+
+                <div class="card" style="width: 15rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Study Guide</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="card-link">Deployed Page</a>
+                        <a href="#" class="card-link">Repo</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 15rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Week 1</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="card-link">Deployed Page</a>
+                        <a href="#" class="card-link">Repo</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 15rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Week 2</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Portfolio with Grid</h6>
+                        <p class="card-text">First draft of a project portfolio.</p>
+                        <a href="https://nnavickas.github.io/Week_2_Challenge/" class="card-link">Deployed Page</a>
+                        <a href="https://github.com/NNavickas/Week_2_Challenge" class="card-link">Repo</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 15rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Week 3</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="card-link">Deployed Page</a>
+                        <a href="#" class="card-link">Repo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+                <!--SKILLS-->
+                <div id="Skills" class=""> <!--WORK HISTORY-->
+
+
+                    <!--ABOUT ME-->
+
+
 </body>
+
+<footer>
+    <a class="nav-link" href="https://portsmouthdsa.org/">
+        <p>Portsmouth DSA<img src="./images/Portsmouth.jpg" height="100px" alt="portsmouth dsa logo"></p>
+    </a>
+    <a class="nav-link" href="https://2023tcslondonmarathon.enthuse.com/pf/natalie-ellis-poppy-amelia">Sponsor Me <img
+            src="./images/london-marathon-logo.png" width="100px" alt="TCS London Marathon Logo"></a>
+    <a class="nav-link" href="https://www.linkedin.com/in/natalienavickas">
+        <p>LinkedIn <img src="./images/linked2.jpg" height="70px" alt="linkedin logo"></p>
+    </a>
+</footer>
+
 </html>
