@@ -7,37 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <title>Natalie Navickas</title>
 </head>
 
 <body>
     <!--nav bar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="btn btn-sm navbar-brand" img src="Images/y00t.png" role="button" data-toggle="modal"
-            data-target="#NFTModal"></a>
-        <!--modal for NFTs, linked to by clicking the yoot on the navbar-->
-        <!-- Modal -->
-        <div class="modal fade" id="NFTModal" tabindex="-1" role="dialog" aria-labelledby="NFTModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="NFTModalLabel">NFT Gallery</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">byeeeee</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <nav class="navbar navbar-expand-lg" id="mainNav">
+        <a class="btn btn-sm navbar-brand" img src="Images/y00t.png" role="button" data-toggle="modal"></a>
+       
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,9 +48,11 @@
     </nav>
 
     <!--jumbotron-->
-    <div class="jumbotron ">
+    <div class="jumbotron jumboStyle">
         <h1 class="display-4">Natalie Navickas</h1>
+        <div class="headshot">
         <img src="./Images/Nat.jpg" 50px alt="Woman with brown hair, blue eyes and a green blouse">
+    </div>
         <p class="lead">Manufacturing and Supply Chain professional upskilling in tech with EdX x Trilogy Skills For
             Life bootcamp.</p>
         <hr class="my-4">
@@ -86,67 +66,67 @@
     <!--PORTFOLIO-->
 
     <!--to include 4 cards in the same style as the other portfolio-->
-    <section class="portfolio text-center bg-light">
-        <div class="container">
-            <h2 class="mb-5">Take a look at some of my work</h2>
-            <div class="row">
-
-                <div class="card" style="width: 15rem;">
+    <div class="container-fluid content">
+            
+            <h2>Take a look at some of my work</h2>
+            <div class="row Portfolio">
+                <div class="cardContainer col-lg-2 col-md-4 col-sm-12">
                     <div class="card-body">
-                        <h5 class="card-title">Study Guide</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="card-link">Deployed Page</a>
-                        <a href="#" class="card-link">Repo</a>
+                        <h5 class="card-title">Prework</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Study Guide</h6>
+                        <p class="card-text">A study guide capturing notes on topics introduced during prework.</p>
+                        <a href="https://nnavickas.github.io/prework-study-guide/" class="card-link">Deployed Page</a>
+                        <a href="https://github.com/NNavickas/prework-study-guide" class="card-link">Repo</a>
                     </div>
                 </div>
 
-                <div class="card" style="width: 15rem;">
+                <div class="cardContainer col-lg-2 col-md-4 col-sm-12">
                     <div class="card-body">
                         <h5 class="card-title">Week 1</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="card-link">Deployed Page</a>
-                        <a href="#" class="card-link">Repo</a>
+                        <h6 class="card-subtitle mb-2 text-muted">Horiseon</h6>
+                        <p class="card-text">Improving accessibility to facilitate better SEO experience for a webpage.</p>
+                        <a href="https://nnavickas.github.io/Week_1_Challenge/" class="card-link">Deployed Page</a>
+                        <a href="https://github.com/NNavickas/Week_1_Challenge" class="card-link">Repo</a>
                     </div>
                 </div>
 
-                <div class="card" style="width: 15rem;">
+                <div class="cardContainer col-lg-2 col-mb-4 col-sm-12">
                     <div class="card-body">
                         <h5 class="card-title">Week 2</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Portfolio with Grid</h6>
-                        <p class="card-text">First draft of a project portfolio.</p>
+                        <p class="card-text">First draft of a project portfolio to showcase the bootcamp.</p>
                         <a href="https://nnavickas.github.io/Week_2_Challenge/" class="card-link">Deployed Page</a>
                         <a href="https://github.com/NNavickas/Week_2_Challenge" class="card-link">Repo</a>
                     </div>
                 </div>
 
-                <div class="card" style="width: 15rem;">
+                <div class="cardContainer col-lg-2 col-md-4 col-sm-12">
                     <div class="card-body">
                         <h5 class="card-title">Week 3</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h6 class="card-subtitle mb-2 text-muted">Portfolio with Bootstrap</h6>
+                        <p class="card-text">An opportunity to make a new portfolio using the Bootstrap toolkit.</p>
                         <a href="#" class="card-link">Deployed Page</a>
                         <a href="#" class="card-link">Repo</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-                <!--SKILLS-->
-                <div id="Skills" class=""> <!--WORK HISTORY-->
+<!--SKILLS-->
+    <div id="Skills" class=""> 
+        
+        
+        <!--WORK HISTORY-->
 
 
-                    <!--ABOUT ME-->
+        <!--ABOUT ME-->
 
 
 </body>
 
 <footer>
+    <div class="row">
     <a class="nav-link" href="https://portsmouthdsa.org/">
         <p>Portsmouth DSA<img src="./images/Portsmouth.jpg" height="100px" alt="portsmouth dsa logo"></p>
     </a>
@@ -155,6 +135,8 @@
     <a class="nav-link" href="https://www.linkedin.com/in/natalienavickas">
         <p>LinkedIn <img src="./images/linked2.jpg" height="70px" alt="linkedin logo"></p>
     </a>
+    </div>
+
 </footer>
 
 </html>

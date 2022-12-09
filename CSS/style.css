@@ -1,141 +1,91 @@
+:root {
+    --dark-navy: #020c1b;
+    --navy: #0a192f;
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --navy-shadow: rgba(2,12,27,0.7);
+    --dark-slate: #495670;
+    --slate: #8892b0;
+    --light-slate: #a8b2d1;
+    --lightest-slate: #ccd6f6;
+    --white: #e6f1ff;
+    --aqua: #64ffda;
+    --green-tint: rgba(100,255,218,0.1);
+    --pink: #f57dff;
+    --blue: #57cbff;
+    --font-sans: "Calibre","Inter","San Francisco","SF Pro Text", sans-serif;
+    --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    --fz-xxs: 12px;
+    --fz-xs: 13px;
+    --fz-sm: 14px;
+    --fz-md: 16px;
+    --fz-lg: 18px;
+    --fz-xl: 20px;
+    --fz-xxl: 22px;
+    --fz-heading: 32px;
+    --border-radius: 10px;
+    --nav-height: 100px;
+    --nav-scroll-height: 70px;
+    --tab-height: 42px;
+    --tab-width: 120px;
+    --easing: cubic-bezier(0.645,0.045,0.355,1);
+    --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    --hamburger-width: 30px;
+    --ham-before: top 0.1s ease-in 0.25s,opacity 0.1s ease-in;
+    --ham-before-active: top 0.1s ease-out,opacity 0.1s ease-out 0.12s;
+    --ham-after: bottom 0.1s ease-in 0.25s,transform 0.22s cubic-bezier(0.55,0.055,0.675,0.19);
+    --ham-after-active: bottom 0.1s ease-out,transform 0.22s cubic-bezier(0.215,0.61,0.355,1) 0.12s;
+}   
+
+#mainNav{
+    background-color:var(navy);
+    color: var(--aqua)
+    transition: all .35s;
+    font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+.nav {
+    background-color: var(--navy);
+    color: var(--aqua)
+}
+
+body {
+    background-color: var(--navy);
+}
 .nav-link {
     align-items: right;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
-
-$primary-color: #ff073a;
-$font-weight-strong: 600;
-
-html {
-  font-family: "Raleway", sans-serif;
+.headshot img {
+    max-width: 10rem;
+    box-shadow: 0px 5px 5px 0px #adb5bd; 
 }
 
-#skills {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 90%;
-  margin: 0 auto;
+.jumboStyle {
+    background-color: var(--navy);
+    color: var(--aqua);
+}
 
-  input[type="radio"] {
-    display: none;
-  }
-
-  div {
-    padding: 0.2rem;
-    transition: opacity 0.5s;
-  }
-
-  div[skill-type="language"] {
-    color: #e84a5f;
-  }
-
-  div[skill-type="framework"] {
-    color: #ff847c;
-  }
-
-  div[skill-type="tool"] {
-    color: #fecea8;
-  }
-
-  div[skill-weight="1"] {
-    font-size: 2rem;
-    line-height: 1rem;
-  }
-
-  div[skill-weight="2"] {
-    font-size: 3rem;
-    line-height: 2rem;
-  }
-
-  div[skill-weight="3"] {
-    font-size: 4rem;
-    line-height: 3rem;
-  }
-
-  div[skill-weight="4"] {
-    font-size: 5rem;
-    line-height: 4rem;
-  }
-
-  div[skill-weight="5"] {
-    font-size: 6rem;
-    line-height: 5rem;
-  }
-
-  .filter-button {
-    color: #000;
-    cursor: pointer;
-    float: left;
-    font-size: 1rem;
-    letter-spacing: 0.15rem;
-    margin: 2rem 0.5%;
-    overflow: hidden;
-    padding: 0.5%;
-    position: relative;
+.cardContainer {
     text-align: center;
-    text-transform: uppercase;
-    transition: all 0.3s;
-    width: 23%;
-    z-index: 1;
+    background-color: var(--navy);
+    color: var(--dark-slate);
+    border-radius: var(--border-radius);
+    border-bottom: 0.25rem var(--light-slate);
+}
 
-    &:after {
-      content: "";
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: $primary-color;
-      z-index: -2;
-    }
-    &:before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0%;
-      height: 100%;
-      background-color: darken($primary-color, 15%);
-      transition: all 0.3s;
-      z-index: -1;
-    }
-    &:hover {
-      color: #fff;
-      &:before {
-        width: 100%;
-      }
-    }
-  }
+.card-title {
+    text-align: center;
+    color: var(--white)
+}
 
-  @mixin filter-out {
-    height: 0;
-    margin: 0;
-    opacity: 0;
-    padding: 0;
-    width: 0;
-  }
-
-  input[type="radio"]:checked + .filter-button {
-    color: white;
-    font-weight: $font-weight-strong;
-  }
-
-  input[id="language"]:checked ~ div[skill-type="framework"],
-  input[id="language"]:checked ~ div[skill-type="tool"] {
-    @include filter-out;
-  }
-
-  input[id="framework"]:checked ~ div[skill-type="language"],
-  input[id="framework"]:checked ~ div[skill-type="tool"] {
-    @include filter-out;
-  }
-
-  input[id="tool"]:checked ~ div[skill-type="language"],
-  input[id="tool"]:checked ~ div[skill-type="framework"] {
-    @include filter-out;
-  }
+.card-text {
+    text-align: center;
+    color: var(--slate)
+}
+.card-link {
+    text-align: center;
+    align-items: flex-end;
+    color: var(--aqua);
 }
