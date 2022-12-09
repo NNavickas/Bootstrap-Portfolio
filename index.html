@@ -15,7 +15,7 @@
     <!--nav bar-->
     <nav class="navbar navbar-expand-lg" id="mainNav">
         <a class="btn btn-sm navbar-brand" img src="Images/y00t.png" role="button" data-toggle="modal"></a>
-       
+
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,10 +27,10 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                    <a class="nav-link" href="#projectShowcase">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Skills</a>
+                    <a class="nav-link" href="#TechnicalSkills">Skills</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
@@ -38,7 +38,7 @@
                         About Me
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Work History</a>
+                        <a class="dropdown-item" href="">Work History</a>
                         <a class="dropdown-item" href="#">Contact Me</a>
                         <a class="dropdown-item" href="#">Sponsor Me</a>
                     </div>
@@ -49,94 +49,125 @@
 
     <!--jumbotron-->
     <div class="jumbotron jumboStyle">
-        <h1 class="display-4">Natalie Navickas</h1>
+        <h1 class="display-4 float-right col-lg-2
+    ">Natalie Navickas</h1>
         <div class="headshot">
-        <img src="./Images/Nat.jpg" 50px alt="Woman with brown hair, blue eyes and a green blouse">
-    </div>
-        <p class="lead">Manufacturing and Supply Chain professional upskilling in tech with EdX x Trilogy Skills For
+            <img src="./Images/Nat.jpg" class="float-right" 50px
+                alt="Woman with brown hair, blue eyes and a green blouse">
+        </div>
+        <p class="lead col-lg-6">Manufacturing and Supply Chain professional upskilling in tech with EdX x Trilogy
+            Skills For
             Life bootcamp.</p>
-        <hr class="my-4">
-        <p>I'm running the London Marathon 2023 for Portsmouth Down Syndrome Association (DSA).
-            If you'd like to sponsor me, click the button below!
-        </p>
-        <a class="btn btn-primary btn-lg" href="https://2023tcslondonmarathon.enthuse.com/pf/natalie-ellis-poppy-amelia"
-            role="button">Sponsor Me?</a>
+        <p class="lead2 col-lg-6">Experienced leader in manufacturing and supply chain looking to secure breadth of knowledge to work with tools being implemented across the industry for supply chain.</p>
     </div>
 
     <!--PORTFOLIO-->
 
     <!--to include 4 cards in the same style as the other portfolio-->
     <div class="container-fluid content">
-            
+        <a id="projectShowcase">
             <h2>Take a look at some of my work</h2>
-            <div class="row Portfolio">
-                <div class="cardContainer col-lg-2 col-md-4 col-sm-12">
+            <div class="row" id="Portfolio">
+                <div class="cardContainer col-md-3 mb-2 mb-md-0">
                     <div class="card-body">
-                        <h5 class="card-title">Prework</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Study Guide</h6>
+                        <h3 class="card-title">Prework</h3>
+                        <h4 class="card-subtitle mb-2 text-muted">Study Guide</h4>
+                        <a href="https://nnavickas.github.io/prework-study-guide/" class="card-link"><img
+                                class="img-fluid rounded-circle mb-3" src="images/prework.PNG"
+                                alt="screen shot of the prework study guide"></a>
                         <p class="card-text">A study guide capturing notes on topics introduced during prework.</p>
                         <a href="https://nnavickas.github.io/prework-study-guide/" class="card-link">Deployed Page</a>
                         <a href="https://github.com/NNavickas/prework-study-guide" class="card-link">Repo</a>
                     </div>
                 </div>
 
-                <div class="cardContainer col-lg-2 col-md-4 col-sm-12">
+                <div class="cardContainer col-md-3 mb-2 mb-md-0">
                     <div class="card-body">
-                        <h5 class="card-title">Week 1</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Horiseon</h6>
-                        <p class="card-text">Improving accessibility to facilitate better SEO experience for a webpage.</p>
+                        <h3 class="card-title">Week 1</h3>
+                        <h4 class="card-subtitle mb-2 text-muted">Horiseon</h4>
+                        <a href="https://nnavickas.github.io/Week_1_Challenge/" class="card-link"><img
+                                class="img-fluid rounded-circle mb-3" src="images/Horiseon.PNG"
+                                alt="screen shot of horiseon webpage"></a>
+                        <p class="card-text">Improving accessibility to facilitate better SEO experience for a webpage.
+                        </p>
                         <a href="https://nnavickas.github.io/Week_1_Challenge/" class="card-link">Deployed Page</a>
                         <a href="https://github.com/NNavickas/Week_1_Challenge" class="card-link">Repo</a>
                     </div>
                 </div>
 
-                <div class="cardContainer col-lg-2 col-mb-4 col-sm-12">
+                <div class="cardContainer col-md-3 mb-2 mb-md-0">
                     <div class="card-body">
-                        <h5 class="card-title">Week 2</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Portfolio with Grid</h6>
+                        <h3 class="card-title">Week 2</h3>
+                        <h4 class="card-subtitle mb-2 text-muted">Portfolio with Grid</h4>
+                        <a href="https://nnavickas.github.io/Week_2_Challenge/" class="card-link"><img
+                                class="img-fluid rounded-circle mb-3" src="images/week2.PNG"
+                                alt="screen shot of the first portfolio, built with grid"></a>
                         <p class="card-text">First draft of a project portfolio to showcase the bootcamp.</p>
                         <a href="https://nnavickas.github.io/Week_2_Challenge/" class="card-link">Deployed Page</a>
                         <a href="https://github.com/NNavickas/Week_2_Challenge" class="card-link">Repo</a>
                     </div>
                 </div>
 
-                <div class="cardContainer col-lg-2 col-md-4 col-sm-12">
+                <div class="cardContainer col-md-3 mb-2 mb-md-0">
                     <div class="card-body">
-                        <h5 class="card-title">Week 3</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Portfolio with Bootstrap</h6>
+                        <h3 class="card-title">Week 3</h3>
+                        <h4 class="card-subtitle mb-2 text-muted">Portfolio with Bootstrap</h4>
+                        <img class="img-fluid rounded-circle mb-3" src="images/week2.PNG"
+                            alt="screenshot of the bootstrap portfolio">
                         <p class="card-text">An opportunity to make a new portfolio using the Bootstrap toolkit.</p>
                         <a href="#" class="card-link">Deployed Page</a>
                         <a href="#" class="card-link">Repo</a>
                     </div>
                 </div>
             </div>
-        </div>
+    </div>
+    </a>
     </div>
 
-<!--SKILLS-->
-    <div id="Skills" class=""> 
-        
-        
-        <!--WORK HISTORY-->
+
+    <!--SKILLS-->
+    <div class="container-fluid content">
+        <a id="TechnicalSkills">
+
+        </a>
+    </div>
 
 
-        <!--ABOUT ME-->
+    <!--WORK HISTORY-->
+    <div class="container-fluid content">
+        <a id="Employment">
+            <h2>A brief History...</h2>
+        </a>
+    </div>
 
+    <!--ABOUT ME-->
+    <div class="container-fluid content">
+        <a id="About">
+            <h2>How to Contact Me</h2>
+        </a>
+    </div>
 
 </body>
 
+<p class="my-4 col-lg-3">I'm running the London Marathon 2023 for Portsmouth Down Syndrome Association (DSA).<br>
+    If you'd like to sponsor me, click the button below!
+</hr>
+<a class="btn btn-primary btn-lg" href="https://2023tcslondonmarathon.enthuse.com/pf/natalie-ellis-poppy-amelia"
+    role="button">Sponsor Me?</a>
+
 <footer>
     <div class="row">
-    <a class="nav-link" href="https://portsmouthdsa.org/">
-        <p>Portsmouth DSA<img src="./images/Portsmouth.jpg" height="100px" alt="portsmouth dsa logo"></p>
-    </a>
-    <a class="nav-link" href="https://2023tcslondonmarathon.enthuse.com/pf/natalie-ellis-poppy-amelia">Sponsor Me <img
-            src="./images/london-marathon-logo.png" width="100px" alt="TCS London Marathon Logo"></a>
-    <a class="nav-link" href="https://www.linkedin.com/in/natalienavickas">
-        <p>LinkedIn <img src="./images/linked2.jpg" height="70px" alt="linkedin logo"></p>
-    </a>
+        <a class="nav-link" href="https://portsmouthdsa.org/">
+            <p>Portsmouth DSA<img src="./images/Portsmouth.jpg" height="100px" alt="portsmouth dsa logo"></p>
+        </a>
+        <a class="nav-link" href="https://2023tcslondonmarathon.enthuse.com/pf/natalie-ellis-poppy-amelia">Sponsor Me
+            <img src="./images/london-marathon-logo.png" width="100px" alt="TCS London Marathon Logo"></a>
+        <a class="nav-link" href="https://www.linkedin.com/in/natalienavickas">
+            <p>LinkedIn <img src="./images/linked2.jpg" height="70px" alt="linkedin logo"></p>
+        </a>
     </div>
 
+    
 </footer>
 
 </html>
