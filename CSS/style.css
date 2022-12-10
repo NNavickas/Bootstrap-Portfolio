@@ -89,17 +89,6 @@ body {
     margin-left: 12rem;
 }
 
-.my-4 {
-    color: var(--slate);
-    text-align: center;
-}
-
-.btn {
-    color: var(--white);
-    border-radius: 0px;
-    border: none;
-}
-
 .btn-primary, .btn-lg {
     background-color: var(--dark-navy);
 }
@@ -118,7 +107,11 @@ body {
     text-align: center;
 }
 
+/* PORTFOLIO */
+
 #Portfolio {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -159,6 +152,11 @@ body {
 
 /* Job History */
 
+#Employment {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
 .DATES {
     color: var(--aqua) !important;
     font-family: var(--font-sans); 
@@ -177,9 +175,13 @@ body {
 /* skills */ 
 
 .Skills {
-    min-height: 250px;
+    min-height: 300px;
 }
 
+#skills {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
 .group1 {
     font-size: 4rem;
     color: var(--aqua);
@@ -204,6 +206,52 @@ body {
     justify-content: center;
 }
 
+/* About Natalie / Contact */
+
+#about_ {
+    margin-top: 3em;
+}
+
+.my-4 {
+    color: var(--slate);
+    text-align: center;
+}
+
+.btn {
+    color: var(--white);
+    border-radius: 0px;
+    border: none;
+}
+
+#externalLinks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+/* Footer */
 
 
-/* MAKE THE NAV BAR STICKY */
+#Footer {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    border-top: var(--aqua) 4px;
+    border-style: double;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+#footnote {
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: var(--aqua);
+}
+
+
+/* ADD HOVER EFFECTS TO SECTION HEADERS */
+/* MAKE SURE THERE#S A HERO SECTION */ 
+/* ADD A BOX SHADOW EFFECT TO BUTTONS */
