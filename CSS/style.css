@@ -35,36 +35,32 @@ h2 {
     font-family: var(--font-sans);
 }
 
-#mainNav {
-    background-color: var(navy);
-    color: var(--aqua) transition: all .35s;
-    font-family: var(--font-sans);
+#navbarSupportedContent {
     font-weight: 200;
     letter-spacing: 1px;
 }
 
-.nav {
-    background-color: var(--navy);
-    color: var(--aqua);
+.nav-link, .nav-link.dropdown-toggle, .dropdown, .dropdown-item {
+    color: var(--aqua) !important;
     font-family: var(--font-sans);
 }
 
-.nav-item, .nav-link, .dropdown {
-    color: var(--aqua);
-}
-
-.nav-item:hover, .nav-link:hover, .dropdown:hover{
+.nav-link:hover, .dropdown:hover {
     color: var(--blue);
 }
 
+.dropdown-menu {
+    background-color: var(--navy);
+    font-family: var(--font-sans);
+    color: var(--aqua);
+    border-style: solid;
+    border-color: var(--aqua);
+}
 
 body {
     background-color: var(--navy);
     font-family: var(--font-sans);
-}
-
-.nav-link {
-    align-items: right;
+    height: 15REM !important;
 }
 
 .headshot img {
@@ -154,3 +150,6 @@ body {
     color: var(--blue)
 }
 
+.content
+
+/* MAKE THE NAV BAR STICKY */
