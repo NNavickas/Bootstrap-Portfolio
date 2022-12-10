@@ -167,10 +167,41 @@ body {
 .DESCR {
     color: var(--lightest-slate) !important;
     font-family: var(--font-sans);
+    text-align: left;
 }
 
-#employment {
-    text-align: center;
+#Employment {
+    text-align: right;
+}
+
+/* skills */ 
+
+.Skills {
+    min-height: 250px;
+}
+
+.group1 {
+    font-size: 4rem;
+    color: var(--aqua);
+    display: flex;
+    justify-content: center;
+    align-items: right;
+}
+
+.group2 {
+    font-size: 2rem;
+    color: var(--blue);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.group3 {
+    font-size: 1rem;
+    color: var(--light-slate);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
