@@ -31,8 +31,12 @@
 
 h2 {
     text-align: center;
-    color: var(--light-slate);
+    color: var(--dark-slate);
     font-family: var(--font-sans);
+}
+
+.navbar {
+    position: sticky-top;
 }
 
 #navbarSupportedContent {
@@ -45,7 +49,7 @@ h2 {
     font-family: var(--font-sans);
 }
 
-.nav-link:hover, .dropdown:hover {
+.nav-link:hover, .dropdown-menu:hover {
     color: var(--blue);
 }
 
@@ -100,6 +104,10 @@ body {
     background-color: var(--dark-navy);
 }
 
+.dropdown-item:hover {
+    background-color: var(--slate);
+}
+
 .btn-primary:hover {
     background-color: var(--slate);
     color: var(--aqua);
@@ -109,7 +117,6 @@ body {
 .display-4 {
     text-align: center;
 }
-
 
 #Portfolio {
     width: 100%;
@@ -146,10 +153,26 @@ body {
     color: var(--aqua);
 }
 
-.card-link:hover {
+.card-link:hover, .nav-link:hover {
     color: var(--blue)
 }
 
-.content
+/* Job History */
+
+.DATES {
+    color: var(--aqua) !important;
+    font-family: var(--font-sans); 
+}
+
+.DESCR {
+    color: var(--lightest-slate) !important;
+    font-family: var(--font-sans);
+}
+
+#employment {
+    text-align: center;
+}
+
+
 
 /* MAKE THE NAV BAR STICKY */
