@@ -160,12 +160,14 @@ body {
 .DATES {
     color: var(--aqua) !important;
     font-family: var(--font-sans); 
+    margin-top: 2rem;
 }
 
 .DESCR {
     color: var(--lightest-slate) !important;
     font-family: var(--font-sans);
     text-align: left;
+    margin-top: 2rem;
 }
 
 #Employment {
