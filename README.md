@@ -36,7 +36,11 @@ This homework was created based on the following criteria:
 
 ✔️Repository contains multiple descriptive commit messages.
 
-✔️Repository contains quality readme with description, screenshot, link to deployed application.
+✔️Repository contains quality readme with description, screenshot, link to deployed application https://nnavickas.github.io/Bootstrap-Portfolio/.
+
+![Screen grab navy with aqua writing and picture of Natalie Navickas](./Images/week3.PNG "Bootstrap Portfolio Screenshot")
+
+
 
 **Review**
 
