@@ -25,6 +25,10 @@ h2 {
     font-family: var(--font-sans);
 }
 
+.jumbotron {
+    margin-top: 3em;
+}
+
 #navbarSupportedContent {
     font-weight: 200;
     letter-spacing: 1px;
@@ -95,6 +99,10 @@ body {
 }
 
 /* PORTFOLIO */
+
+.content {
+    margin-top: 12em;
+}
 
 #Portfolio {
     margin-top: 3rem;
@@ -198,13 +206,17 @@ body {
 /* About Natalie / Contact */
 
 #About {
-    margin-top: 30em;
-    margin-bottom: 30em;
+
+    margin-bottom: 3em;
 }
 
-.icons {
-    height: 50px;
-    width: 50px;
+#contact_ {
+    text-align: center;
+    margin-top: 3em;
+    color: var(--blue);
+}
+
+.icons:hover {
     box-shadow: 0px 5px 5px 0px #adb5bd;
 }
 
@@ -219,11 +231,11 @@ body {
     border: none;
 }
 
+/*no idea why this is sitting off to the right*/
 #externalLinks {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
+    justify-content: space-evenly;
+    margin-right: 6em;
 }
 
 /* Footer */
