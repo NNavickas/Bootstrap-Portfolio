@@ -16,27 +16,13 @@
     --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", sans-serif;
     --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
     --border-radius: 10px;
-    --nav-height: 100px;
-    --nav-scroll-height: 70px;
-    --tab-height: 42px;
-    --tab-width: 120px;
-    --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
-    --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     --hamburger-width: 30px;
-    --ham-before: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
-    --ham-before-active: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
-    --ham-after: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    --ham-after-active: bottom 0.1s ease-out, transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
 }
 
 h2 {
     text-align: center;
     color: var(--dark-slate);
     font-family: var(--font-sans);
-}
-
-.navbar {
-    position: sticky-top;
 }
 
 #navbarSupportedContent {
@@ -70,6 +56,7 @@ body {
 .headshot img {
     max-width: 10rem;
     box-shadow: 0px 5px 5px 0px #adb5bd;
+    -ms-flex-item-align: center;
 }
 
 .jumboStyle {
@@ -78,7 +65,7 @@ body {
 }
 
 .lead {
-    color: var(--white);
+    color: var(--aqua);
     text-align: center;
     margin-left: 12rem;
 }
@@ -100,7 +87,7 @@ body {
 .btn-primary:hover {
     background-color: var(--slate);
     color: var(--aqua);
-    box-shadow: none;
+    box-shadow: 0px 5px 5px 0px #adb5bd;
 }
 
 .display-4 {
@@ -210,8 +197,15 @@ body {
 
 /* About Natalie / Contact */
 
-#about_ {
-    margin-top: 3em;
+#About {
+    margin-top: 30em;
+    margin-bottom: 30em;
+}
+
+.icons {
+    height: 50px;
+    width: 50px;
+    box-shadow: 0px 5px 5px 0px #adb5bd;
 }
 
 .my-4 {
